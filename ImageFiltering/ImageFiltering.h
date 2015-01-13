@@ -13,6 +13,10 @@
 #include <CoreGraphics/CoreGraphics.h>
 #include <CoreVideo/CoreVideo.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct _ConvolutionFilter {
     const int16_t * kernel;
     int16_t         size;
@@ -28,4 +32,8 @@ CGImageRef CreateFilteredImage_CPU(CVImageBufferRef buffer, ConvolutionFilter fi
 CGImageRef CreateFilteredImage_CPU_MultiThread(CVImageBufferRef buffer, ConvolutionFilter filter, bool neon, size_t numOfThreads);
 CGImageRef CreateFilteredImage_GPU_vImage(CVImageBufferRef buffer, ConvolutionFilter filter);
 
+#ifdef __cplusplus
+}
+#endif
+    
 #endif

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1421756B1A6560D600EFC3EF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1421756A1A6560D600EFC3EF /* opencv2.framework */; };
+		1421756E1A65610E00EFC3EF /* ImageFilteringByOpenCV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1421756C1A65610E00EFC3EF /* ImageFilteringByOpenCV.cpp */; };
+		142175701A6565EF00EFC3EF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1421756F1A6565EF00EFC3EF /* CoreMedia.framework */; };
 		144B1A3A1A5D6D2400EABBBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B1A391A5D6D2400EABBBA /* main.m */; };
 		144B1A3D1A5D6D2400EABBBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B1A3C1A5D6D2400EABBBA /* AppDelegate.m */; };
-		144B1A401A5D6D2400EABBBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144B1A3F1A5D6D2400EABBBA /* ViewController.m */; };
+		144B1A401A5D6D2400EABBBA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144B1A3F1A5D6D2400EABBBA /* ViewController.mm */; };
 		144B1A431A5D6D2400EABBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144B1A411A5D6D2400EABBBA /* Main.storyboard */; };
 		144B1A451A5D6D2400EABBBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144B1A441A5D6D2400EABBBA /* Images.xcassets */; };
 		144B1A481A5D6D2400EABBBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144B1A461A5D6D2400EABBBA /* LaunchScreen.xib */; };
@@ -33,13 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1421756A1A6560D600EFC3EF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ImageFiltering/opencv2.framework; sourceTree = "<group>"; };
+		1421756C1A65610E00EFC3EF /* ImageFilteringByOpenCV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageFilteringByOpenCV.cpp; sourceTree = "<group>"; };
+		1421756D1A65610E00EFC3EF /* ImageFilteringByOpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFilteringByOpenCV.h; sourceTree = "<group>"; };
+		1421756F1A6565EF00EFC3EF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		144B1A341A5D6D2400EABBBA /* ImageFiltering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFiltering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		144B1A381A5D6D2400EABBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		144B1A391A5D6D2400EABBBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		144B1A3B1A5D6D2400EABBBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		144B1A3C1A5D6D2400EABBBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		144B1A3E1A5D6D2400EABBBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		144B1A3F1A5D6D2400EABBBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		144B1A3F1A5D6D2400EABBBA /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		144B1A421A5D6D2400EABBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		144B1A441A5D6D2400EABBBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		144B1A471A5D6D2400EABBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142175701A6565EF00EFC3EF /* CoreMedia.framework in Frameworks */,
+				1421756B1A6560D600EFC3EF /* opencv2.framework in Frameworks */,
 				14C3F8D71A639702008AA576 /* CoreGraphics.framework in Frameworks */,
 				14C3F8D51A6396FB008AA576 /* CoreVideo.framework in Frameworks */,
 				144B1A621A5D6DCE00EABBBA /* Accelerate.framework in Frameworks */,
@@ -84,8 +93,10 @@
 				144B1A5F1A5D6DB500EABBBA /* UIKit.framework */,
 				14C3F8D61A639702008AA576 /* CoreGraphics.framework */,
 				14C3F8D41A6396FB008AA576 /* CoreVideo.framework */,
+				1421756F1A6565EF00EFC3EF /* CoreMedia.framework */,
 				144B1A611A5D6DCE00EABBBA /* Accelerate.framework */,
 				144B1A5D1A5D6DAA00EABBBA /* AVFoundation.framework */,
+				1421756A1A6560D600EFC3EF /* opencv2.framework */,
 				144B1A361A5D6D2400EABBBA /* ImageFiltering */,
 				144B1A501A5D6D2400EABBBA /* ImageFilteringTests */,
 				144B1A351A5D6D2400EABBBA /* Products */,
@@ -104,12 +115,14 @@
 		144B1A361A5D6D2400EABBBA /* ImageFiltering */ = {
 			isa = PBXGroup;
 			children = (
+				1421756D1A65610E00EFC3EF /* ImageFilteringByOpenCV.h */,
+				1421756C1A65610E00EFC3EF /* ImageFilteringByOpenCV.cpp */,
 				14E0316C1A61765700012216 /* ImageFiltering.h */,
 				14E0316D1A6176A100012216 /* ImageFiltering.c */,
 				144B1A3B1A5D6D2400EABBBA /* AppDelegate.h */,
 				144B1A3C1A5D6D2400EABBBA /* AppDelegate.m */,
 				144B1A3E1A5D6D2400EABBBA /* ViewController.h */,
-				144B1A3F1A5D6D2400EABBBA /* ViewController.m */,
+				144B1A3F1A5D6D2400EABBBA /* ViewController.mm */,
 				144B1A411A5D6D2400EABBBA /* Main.storyboard */,
 				144B1A441A5D6D2400EABBBA /* Images.xcassets */,
 				144B1A461A5D6D2400EABBBA /* LaunchScreen.xib */,
@@ -246,7 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E0316E1A6176A100012216 /* ImageFiltering.c in Sources */,
-				144B1A401A5D6D2400EABBBA /* ViewController.m in Sources */,
+				1421756E1A65610E00EFC3EF /* ImageFilteringByOpenCV.cpp in Sources */,
+				144B1A401A5D6D2400EABBBA /* ViewController.mm in Sources */,
 				144B1A3D1A5D6D2400EABBBA /* AppDelegate.m in Sources */,
 				144B1A3A1A5D6D2400EABBBA /* main.m in Sources */,
 			);
@@ -373,6 +387,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ImageFiltering",
+				);
 				INFOPLIST_FILE = ImageFiltering/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,6 +407,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ImageFiltering",
+				);
 				INFOPLIST_FILE = ImageFiltering/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -31,7 +31,7 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="onFilterSizeSegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8ek-k3-eFj"/>
+                                    <action selector="onFilterSizeSegmentChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="16Z-L9-AQh"/>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-bv-AsO">
@@ -42,6 +42,7 @@
                                     <segment title="Multi"/>
                                     <segment title="vImage"/>
                                     <segment title="CIFilter"/>
+                                    <segment title="OpenCV"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
