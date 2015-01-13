@@ -7,3 +7,4 @@
 - Multi : マルチスレッドによるCPU演算でのフィルタリング
 - vImage : Accelarate.frameworkのvImageによるGPU演算でのフィルタリング
 - CIFilter : CoreImage.frameworkのCIFilterによるGPU演算でのフィルタリング
+- OpenCV : OpenCVのGaussianBlur関数によるCPU演算でのフィルタリング
